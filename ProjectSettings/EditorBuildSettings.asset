@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menus/MainMenu.unity
+    guid: 659a62caf67c9b144b93e5faf0e661a5
+  - enabled: 1
+    path: Assets/Scenes/Menus/SelectSong.unity
+    guid: 582c3dda238773645a61666daede6a49
+  - enabled: 1
+    path: Assets/Scenes/Menus/SelectLevelPenutup.unity
+    guid: 0231e9f8db4d67847947dfa30dd7ad3d
+  - enabled: 1
+    path: Assets/Scenes/Menus/SelectLevelPenyambutan.unity
+    guid: 8b9cc297ad17c8d48ae44905a8e02618
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penyambutan/Easy/EasyGameScene.unity
+    guid: e55483202446f3749bf0c207217a6044
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penyambutan/Medium/MediumGameScene.unity
+    guid: b65c977b476bd404dbb08f1b04de765b
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penyambutan/Hard/HardGameScene.unity
+    guid: a5d68850566ed4045a101559b457ded0
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penyambutan/Easy/WinScene.unity
+    guid: c58c9de804c6a2f41a83e68512901c8b
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penyambutan/Easy/LoseScene.unity
+    guid: c7081380dac49294d83f0583b73b3e05
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penyambutan/Medium/WinScene.unity
+    guid: f2947f2ea48956e44902a1a5975b3e50
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penyambutan/Medium/LoseScene.unity
+    guid: ae50b007b12044b4fa18bba945148e8c
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penyambutan/Hard/WinScene.unity
+    guid: 6aec2d71eaf70d442ad88dca86ca9c44
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penyambutan/Hard/LoseScene.unity
+    guid: 281177a45182093409227ca630af55c7
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penutup/Easy/EasyGameScene.unity
+    guid: a1d9305dafb483d408be134fed604c8f
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penutup/Easy/WinScene.unity
+    guid: 9b9ef362ba5792c4ba49b50be4ef5258
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penutup/Easy/LoseScene.unity
+    guid: fbe57c95a35768a42849963a5dc18033
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penutup/Medium/MediumGameScene.unity
+    guid: 49b5fd2db0736014f84158edd1f4114d
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penutup/Medium/WinScene.unity
+    guid: ddb2a71930a71c048afc5a2ea9bc24a2
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penutup/Medium/LoseScene.unity
+    guid: e234f199beffc3742b7d369120200f3e
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penutup/Hard/HardGameScene.unity
+    guid: 7081ee61766a5c14f8b6b1f128c7f090
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penutup/Hard/WinScene.unity
+    guid: 27ecba3210549e94a920ed39c74c44bb
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Penutup/Hard/LoseScene.unity
+    guid: 6ebadab53f94bdc45bcdc06dc460b0cc
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Epeteng/Easy/EasyGameScene.unity
+    guid: 4cf60a073ab92704caecd71f26edd359
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Epeteng/Easy/WinScene.unity
+    guid: 7edfbc7d146236d419cdbff9f7d805af
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Epeteng/Easy/LoseScene.unity
+    guid: 2df2c61f8a7524e49901624492e4335e
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Epeteng/Medium/MediumGameScene.unity
+    guid: 0e3092b8b077602429474854f44c18bc
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Epeteng/Medium/WinScene.unity
+    guid: 9ccb2c0cbdba2e545a53f9aee6743e02
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Epeteng/Medium/LoseScene.unity
+    guid: 2cd8f5150c38b1e4c8185a713dadd7e1
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Epeteng/Hard/HardGameScene.unity
+    guid: 44fc6be6ea387424ba7eecd174b46f8b
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Epeteng/Hard/WinScene.unity
+    guid: 3a78740c3d027804794b6ec84b4f5ec2
+  - enabled: 1
+    path: Assets/Scenes/GameScene/Songs/Epeteng/Hard/LoseScene.unity
+    guid: 1b40f575d9897624d96345937b580101
+  - enabled: 1
+    path: Assets/Scenes/Menus/HowToPlay.unity
+    guid: 3aac19ee41821cb43b998e17efd759cd
+  - enabled: 1
+    path: Assets/Scenes/GameScene/LearnToPlay.unity
+    guid: af9625bbe373e3043854681ba85952d2
+  - enabled: 1
+    path: Assets/Scenes/Menus/InstrumentsMenu.unity
+    guid: 0763a76a70089624e8c168c9b549b245
+  - enabled: 1
+    path: Assets/Scenes/Instruments/InstrumentsSceneBarangan.unity
+    guid: 1aab1e28eb200474ebb3782f8ddf4bf3
+  - enabled: 1
+    path: Assets/Scenes/Instruments/InstrumentsSceneJegog.unity
+    guid: ac00bae7a01f1b74e95ff601b777117c
+  - enabled: 1
+    path: Assets/Scenes/Instruments/InstrumentsSceneKancil.unity
+    guid: 8a94c03f31ae1cf41bff88868decb2e2
+  - enabled: 1
+    path: Assets/Scenes/Instruments/InstrumentsSceneSuwir.unity
+    guid: cb8ec69f066a4eb4f973329e03880af5
+  - enabled: 1
+    path: Assets/Scenes/Menus/About.unity
+    guid: 06d5d6ecb0ebf0448a7eb15cdc23a10f
+  - enabled: 1
+    path: Assets/Scenes/Menus/SelectLevelEpeteng.unity
+    guid: f92c785c812f9cb4299754a5443af351
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: ba7d63cac0b091d4186402654757254f,
+      type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
+      guid: 5df69278cc642ae4bb8669c72dbd1046, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 624e55a1eef7b524ab308fde78d0830d,
+      type: 2}

@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Prefab
+  - TouchArea
+  - Activator
+  - Note
+  - WinNote
+  - Needle
+  - HighScore
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 0
+  - Water
+  - UI
+  - 1
+  - 2
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Tile
+    uniqueID: 2189785227
+    locked: 0
