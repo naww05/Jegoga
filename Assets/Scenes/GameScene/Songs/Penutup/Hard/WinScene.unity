@@ -159,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 165, y: -274.9574}
-  m_SizeDelta: {x: 224.9908, y: 86.7148}
+  m_AnchoredPosition: {x: 196.5936, y: -252.72}
+  m_SizeDelta: {x: 288.1781, y: 131.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &69847825
 MonoBehaviour:
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YOU WIN
+  m_text: Menang
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 255e6200a355b9e479dc8cd57363e7eb, type: 2}
   m_sharedMaterial: {fileID: -4675238984527546471, guid: 255e6200a355b9e479dc8cd57363e7eb,
@@ -797,7 +797,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: Menu Utama
 --- !u!222 &1374654732
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -842,8 +842,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -165, y: -274.9574}
-  m_SizeDelta: {x: 224.9908, y: 86.7148}
+  m_AnchoredPosition: {x: -193.08337, y: -252.7248}
+  m_SizeDelta: {x: 281.1576, y: 131.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556500216
 MonoBehaviour:
@@ -1010,7 +1010,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play Again
+  m_Text: Coba Lagi
 --- !u!222 &1688873174
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1053,8 +1053,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -519, y: 192}
-  m_SizeDelta: {x: 421.0679, y: 133.473}
+  m_AnchoredPosition: {x: -543.23, y: 192}
+  m_SizeDelta: {x: 469.53, y: 133.473}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1830195729
 MonoBehaviour:
@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: High Score
+  m_text: Skor Tertinggi
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 255e6200a355b9e479dc8cd57363e7eb, type: 2}
   m_sharedMaterial: {fileID: -4675238984527546471, guid: 255e6200a355b9e479dc8cd57363e7eb,
@@ -1574,7 +1574,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Score
+  m_text: Skor
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 255e6200a355b9e479dc8cd57363e7eb, type: 2}
   m_sharedMaterial: {fileID: -4675238984527546471, guid: 255e6200a355b9e479dc8cd57363e7eb,

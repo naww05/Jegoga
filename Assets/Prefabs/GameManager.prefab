@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6556449246949020484}
   - component: {fileID: 5053665264682300782}
-  - component: {fileID: 5813589838875779146}
+  - component: {fileID: 7106904509848729199}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -54,7 +54,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.95, y: 0.09769249, z: 0.38}
   m_Center: {x: 0, y: -0.29612732, z: 0}
---- !u!114 &5813589838875779146
+--- !u!114 &7106904509848729199
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,3 +67,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rockMeter: {fileID: 0}
+  musicSource: {fileID: 0}
+  loseSceneIndex: 8
+  winSceneIndex: 7

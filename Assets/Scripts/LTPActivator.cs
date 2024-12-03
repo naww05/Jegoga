@@ -1,38 +1,41 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LTPActivator : MonoBehaviour
 {
     private List<GameObject> notesInTrigger = new List<GameObject>();
-    private GameObject GameManager;
-    private AudioSource audioSource;
+    private AudioSource audioSource;  // Tambahkan referensi AudioSource untuk setiap activator
 
     private void Start()
     {
-        audioSource = GameObject.Find("JegogSong").GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource != null)
+        {
+            audioSource.playOnAwake = false;
+        }
     }
 
     void Update()
     {
         // Deteksi sentuhan pada layar
-        for (int i = 0; i < Input.touchCount; i++)
+        for (int i = 0; i < Input.touchCount; i++) // Loop untuk deteksi multi-touch
         {
             Touch touch = Input.GetTouch(i);
             if (touch.phase == TouchPhase.Began)
             {
-                // Cek apakah sentuhan terjadi pada objek bambu
+                // Cek apakah sentuhan terjadi pada objek activator
                 Ray ray = Camera.main.ScreenPointToRay(touch.position);
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit))
                 {
                     if (hit.collider.gameObject == this.gameObject)
                     {
-                        if (notesInTrigger.Count > 0) // Cek apakah ada note di dalam trigger
+                        PlaySound(); // Mainkan suara untuk activator yang disentuh
+
+                        if (notesInTrigger.Count > 0)
                         {
                             DestroyNotesInTrigger();
-                            ResumeAllNotes();
-                            ResumeAudio();
+                            ResumeAllNotes(); // Resume semua note secara bersamaan
                         }
                     }
                 }
@@ -47,13 +50,11 @@ public class LTPActivator : MonoBehaviour
             notesInTrigger.Add(other.gameObject);
             HighlightNoteTile(other.gameObject, true);
 
-            // Menghentikan pergerakan note saat berada dalam trigger
             LTPNoteMovement noteMovement = other.GetComponent<LTPNoteMovement>();
             if (noteMovement != null)
             {
                 noteMovement.StopNote();
-                PauseAllNotesExcept(noteMovement);
-                PauseAudio();
+                PauseAllNotesExcept(noteMovement); // Pause semua note lainnya
             }
         }
     }
@@ -65,7 +66,6 @@ public class LTPActivator : MonoBehaviour
             notesInTrigger.Remove(other.gameObject);
             HighlightNoteTile(other.gameObject, false);
 
-            // Melanjutkan pergerakan note saat keluar dari trigger
             LTPNoteMovement noteMovement = other.GetComponent<LTPNoteMovement>();
             if (noteMovement != null)
             {
@@ -81,22 +81,6 @@ public class LTPActivator : MonoBehaviour
             Destroy(note);
         }
         notesInTrigger.Clear();
-    }
-
-    void HighlightNoteTile(GameObject note, bool highlight)
-    {
-        Renderer renderer = note.GetComponent<Renderer>();
-        if (renderer != null)
-        {
-            if (highlight)
-            {
-                renderer.material.color = Color.red;
-            }
-            else
-            {
-                renderer.material.color = Color.white;
-            }
-        }
     }
 
     void PauseAllNotesExcept(LTPNoteMovement activeNote)
@@ -120,19 +104,21 @@ public class LTPActivator : MonoBehaviour
         }
     }
 
-    void PauseAudio()
+    void HighlightNoteTile(GameObject note, bool highlight)
     {
-        if (audioSource != null && audioSource.isPlaying)
+        Renderer renderer = note.GetComponent<Renderer>();
+        if (renderer != null)
         {
-            audioSource.Pause();
+            renderer.material.color = highlight ? Color.red : Color.white;
         }
     }
 
-    void ResumeAudio()
+    // Fungsi untuk memainkan suara pada activator
+    void PlaySound()
     {
-        if (audioSource != null && !audioSource.isPlaying)
+        if (audioSource != null && audioSource.clip != null)
         {
-            audioSource.UnPause();
+            audioSource.PlayOneShot(audioSource.clip);
         }
     }
 }

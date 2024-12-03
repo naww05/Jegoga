@@ -285,7 +285,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: Menu Utama
 --- !u!222 &306677513
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -592,7 +592,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play Again
+  m_Text: Coba Lagi
 --- !u!222 &743644918
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -671,7 +671,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOU LOSE
+  m_Text: Kalah
 --- !u!222 &805518953
 CanvasRenderer:
   m_ObjectHideFlags: 0

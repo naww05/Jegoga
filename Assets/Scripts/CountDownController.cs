@@ -33,7 +33,7 @@ public class CountdownController : MonoBehaviour
             countdown--;
         }
 
-        countdownText.text = "MULAI!";
+        countdownText.text = "MULAI";
         yield return new WaitForSeconds(1);
         countdownText.gameObject.SetActive(false);
         staticText.gameObject.SetActive(false); // Nonaktifkan teks statis

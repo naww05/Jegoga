@@ -285,7 +285,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: Menu Utama
 --- !u!222 &306677513
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -424,8 +424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -155, y: -291.54694}
-  m_SizeDelta: {x: 281.1501, y: 119.8987}
+  m_AnchoredPosition: {x: -230, y: -278.6754}
+  m_SizeDelta: {x: 311.5809, y: 145.6418}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &480739069
 MonoBehaviour:
@@ -592,7 +592,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play Again
+  m_Text: Coba Lagi
 --- !u!222 &743644918
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -671,7 +671,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOU LOSE
+  m_Text: kalah
 --- !u!222 &805518953
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -791,8 +791,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 165, y: -291.54688}
-  m_SizeDelta: {x: 281.1501, y: 119.8987}
+  m_AnchoredPosition: {x: 232, y: -278.68}
+  m_SizeDelta: {x: 311.5809, y: 145.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1652417128
 MonoBehaviour:

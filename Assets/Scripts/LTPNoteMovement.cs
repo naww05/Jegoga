@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LTPNoteMovement : MonoBehaviour
@@ -22,12 +20,15 @@ public class LTPNoteMovement : MonoBehaviour
 
     void Update()
     {
-        if (isStopped || isPaused) // Note berhenti jika dihentikan atau dipause
+        // Mengontrol kecepatan berdasarkan status note
+        if (isStopped || isPaused)
         {
             rb.velocity = Vector3.zero;
+            rb.isKinematic = true; // Menghentikan physics saat dipause atau dihentikan
         }
         else
         {
+            rb.isKinematic = false; // Aktifkan physics lagi saat dilanjutkan
             rb.velocity = new Vector3(0, -speed, 0);
         }
     }
@@ -35,6 +36,7 @@ public class LTPNoteMovement : MonoBehaviour
     public void StopNote()
     {
         isStopped = true;
+        rb.velocity = Vector3.zero; // Pastikan kecepatan langsung menjadi 0
     }
 
     public void ResumeNote()
@@ -46,10 +48,14 @@ public class LTPNoteMovement : MonoBehaviour
     public void Pause()
     {
         isPaused = true;
+        rb.velocity = Vector3.zero; // Pastikan kecepatan langsung menjadi 0 saat dipause
+        rb.isKinematic = true; // Menonaktifkan physics selama pause
     }
 
     public void Resume()
     {
         isPaused = false;
+        rb.isKinematic = false; // Mengaktifkan physics kembali saat resume
+        rb.velocity = new Vector3(0, -speed, 0); // Kembali mengatur velocity
     }
 }
